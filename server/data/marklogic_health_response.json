@@ -1,0 +1,1270 @@
+{
+  "cluster-id": "7222958793381141742",
+  "host-id": "17383207595577169412",
+  "timestamp": "2018-12-06T18:46:42.218941+01:00",
+  "cluster-health-report": [
+    {
+      "state": "at-risk",
+      "resource-type": "cluster",
+      "resource-id": "7222958793381141742",
+      "resource-name": "vmlinmlc04.iso.ch-cluster",
+      "code": "HEALTH-CLUSTER",
+      "message": " Review the following critical resources: forest:PROD_ISO_OBP_03-R1,forest:PROD_ISO_OBP_02-R1,forest:PROD_ISO_OBP_03,forest:PROD_ISO_OBP_02,forest:PROD_ISO_OBP_01",
+      "relation": [
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        }
+      ]
+    },
+    {
+      "state": "critical",
+      "resource-type": "forest",
+      "resource-id": "16687723532929874353",
+      "resource-name": "PROD_ISO_OBP_03-R1",
+      "code": "HEALTH-FOREST-STORAGE-LOW",
+      "message": "Forest available space is low. Less than 10% available space for forest(s).",
+      "relation": [
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        },
+        {
+          "type": "database",
+          "id": "8082813985163983697",
+          "name": "PROD_ISO_OBP"
+        },
+        {
+          "type": "host",
+          "id": "9893745959390689567",
+          "name": "vmlinmlc04.iso.ch"
+        }
+      ]
+    },
+    {
+      "state": "critical",
+      "resource-type": "forest",
+      "resource-id": "15451524771477445067",
+      "resource-name": "PROD_ISO_OBP_02-R1",
+      "code": "HEALTH-FOREST-STORAGE-LOW",
+      "message": "Forest available space is low. Less than 10% available space for forest(s).",
+      "relation": [
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        },
+        {
+          "type": "database",
+          "id": "8082813985163983697",
+          "name": "PROD_ISO_OBP"
+        },
+        {
+          "type": "host",
+          "id": "17383207595577169412",
+          "name": "vmlinmlc06.iso.ch"
+        }
+      ]
+    },
+    {
+      "state": "critical",
+      "resource-type": "forest",
+      "resource-id": "4429508507485302477",
+      "resource-name": "PROD_ISO_OBP_03",
+      "code": "HEALTH-FOREST-STORAGE-LOW",
+      "message": "Forest available space is low. Less than 10% available space for forest(s).",
+      "relation": [
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        },
+        {
+          "type": "database",
+          "id": "8082813985163983697",
+          "name": "PROD_ISO_OBP"
+        },
+        {
+          "type": "host",
+          "id": "17383207595577169412",
+          "name": "vmlinmlc06.iso.ch"
+        }
+      ]
+    },
+    {
+      "state": "critical",
+      "resource-type": "forest",
+      "resource-id": "16748408603390481435",
+      "resource-name": "PROD_ISO_OBP_02",
+      "code": "HEALTH-FOREST-STORAGE-LOW",
+      "message": "Forest available space is low. Less than 10% available space for forest(s).",
+      "relation": [
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        },
+        {
+          "type": "database",
+          "id": "8082813985163983697",
+          "name": "PROD_ISO_OBP"
+        },
+        {
+          "type": "host",
+          "id": "5303762666313818542",
+          "name": "vmlinmlc05.iso.ch"
+        }
+      ]
+    },
+    {
+      "state": "critical",
+      "resource-type": "forest",
+      "resource-id": "12164944854092823856",
+      "resource-name": "PROD_ISO_OBP_01",
+      "code": "HEALTH-FOREST-STORAGE-LOW",
+      "message": "Forest available space is low. Less than 10% available space for forest(s).",
+      "relation": [
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        },
+        {
+          "type": "database",
+          "id": "8082813985163983697",
+          "name": "PROD_ISO_OBP"
+        },
+        {
+          "type": "host",
+          "id": "9893745959390689567",
+          "name": "vmlinmlc04.iso.ch"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "16856655610604380807",
+      "resource-name": "Schemas",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "3403095080802031604",
+          "name": "Schemas"
+        },
+        {
+          "type": "forest",
+          "id": "10999004094289423816",
+          "name": "Schemas_R01"
+        },
+        {
+          "type": "forest",
+          "id": "14989601566255208967",
+          "name": "Schemas_R02"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "9651932642639260688",
+      "resource-name": "Modules",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "9004974684966661628",
+          "name": "Modules"
+        },
+        {
+          "type": "forest",
+          "id": "1443618288818579741",
+          "name": "Modules_R01"
+        },
+        {
+          "type": "forest",
+          "id": "12123041389131055429",
+          "name": "Modules_R02"
+        },
+        {
+          "type": "server",
+          "id": "16193727555339080578",
+          "name": "App-Services"
+        },
+        {
+          "type": "server",
+          "id": "10546635431076559546",
+          "name": "Modules_webdav"
+        },
+        {
+          "type": "server",
+          "id": "12319570176697581046",
+          "name": "PROD_ISO_OBP-xcc"
+        },
+        {
+          "type": "server",
+          "id": "17643765420635381797",
+          "name": "prod_iso_projects-search"
+        },
+        {
+          "type": "server",
+          "id": "982676967342341575",
+          "name": "prod_iso_projects-search-interim"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "8545462025777527579",
+      "resource-name": "Extensions",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "12507526647046787070",
+          "name": "Extensions"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "13004605059703871317",
+      "resource-name": "PROD_ISO_PROJECTS-INTERIM",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "4904300717914655324",
+          "name": "PROJECTS-INTERIM_01"
+        },
+        {
+          "type": "forest",
+          "id": "3438955713165945953",
+          "name": "PROJECTS-INTERIM_01_R01"
+        },
+        {
+          "type": "forest",
+          "id": "12782821952456696931",
+          "name": "PROJECTS-INTERIM_01_R02"
+        },
+        {
+          "type": "server",
+          "id": "982676967342341575",
+          "name": "prod_iso_projects-search-interim"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "5493578562136933716",
+      "resource-name": "Triggers",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "10154269852158680411",
+          "name": "Triggers"
+        },
+        {
+          "type": "forest",
+          "id": "13364735901318805859",
+          "name": "Triggers_R01"
+        },
+        {
+          "type": "forest",
+          "id": "1115641602318973085",
+          "name": "Triggers_R02"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "15232525611117383926",
+      "resource-name": "App-Services",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "8397023215818988861",
+          "name": "App-Services"
+        },
+        {
+          "type": "server",
+          "id": "13476040881685483798",
+          "name": "HealthCheck"
+        },
+        {
+          "type": "server",
+          "id": "5378767152978102394",
+          "name": "Manage"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "4349370321868729950",
+      "resource-name": "Fab",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "database",
+          "id": "5493578562136933716",
+          "name": "Triggers",
+          "roleref": "triggers"
+        },
+        {
+          "type": "forest",
+          "id": "3019903636670824825",
+          "name": "Fab"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "5696235803027714789",
+      "resource-name": "Security",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "11010766077713076500",
+          "name": "Security"
+        },
+        {
+          "type": "forest",
+          "id": "920070213049873702",
+          "name": "Security_R01"
+        },
+        {
+          "type": "forest",
+          "id": "9519566835972118258",
+          "name": "Security_R02"
+        },
+        {
+          "type": "server",
+          "id": "3211406097871915571",
+          "name": "Admin"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "1573931705172652283",
+      "resource-name": "Last-Login",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "4733454844896298256",
+          "name": "Last-Login"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "database",
+      "resource-id": "8082813985163983697",
+      "resource-name": "PROD_ISO_OBP",
+      "code": "HEALTH-DATABASE",
+      "message": " Review forest:PROD_ISO_OBP_03-R1",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "2667309407830195142",
+          "name": "PROD_ISO_OBP_01-R1"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "server",
+          "id": "13120374894640474789",
+          "name": "PROD_ISO_OBP-webdav"
+        },
+        {
+          "type": "server",
+          "id": "12319570176697581046",
+          "name": "PROD_ISO_OBP-xcc"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "database",
+      "resource-id": "8082813985163983697",
+      "resource-name": "PROD_ISO_OBP",
+      "code": "HEALTH-DATABASE",
+      "message": " Review forest:PROD_ISO_OBP_02-R1",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "2667309407830195142",
+          "name": "PROD_ISO_OBP_01-R1"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "server",
+          "id": "13120374894640474789",
+          "name": "PROD_ISO_OBP-webdav"
+        },
+        {
+          "type": "server",
+          "id": "12319570176697581046",
+          "name": "PROD_ISO_OBP-xcc"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "database",
+      "resource-id": "8082813985163983697",
+      "resource-name": "PROD_ISO_OBP",
+      "code": "HEALTH-DATABASE",
+      "message": " Review forest:PROD_ISO_OBP_03",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "2667309407830195142",
+          "name": "PROD_ISO_OBP_01-R1"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "server",
+          "id": "13120374894640474789",
+          "name": "PROD_ISO_OBP-webdav"
+        },
+        {
+          "type": "server",
+          "id": "12319570176697581046",
+          "name": "PROD_ISO_OBP-xcc"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "database",
+      "resource-id": "8082813985163983697",
+      "resource-name": "PROD_ISO_OBP",
+      "code": "HEALTH-DATABASE",
+      "message": " Review forest:PROD_ISO_OBP_02",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "2667309407830195142",
+          "name": "PROD_ISO_OBP_01-R1"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "server",
+          "id": "13120374894640474789",
+          "name": "PROD_ISO_OBP-webdav"
+        },
+        {
+          "type": "server",
+          "id": "12319570176697581046",
+          "name": "PROD_ISO_OBP-xcc"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "database",
+      "resource-id": "8082813985163983697",
+      "resource-name": "PROD_ISO_OBP",
+      "code": "HEALTH-DATABASE",
+      "message": " Review forest:PROD_ISO_OBP_01",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "2667309407830195142",
+          "name": "PROD_ISO_OBP_01-R1"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "server",
+          "id": "13120374894640474789",
+          "name": "PROD_ISO_OBP-webdav"
+        },
+        {
+          "type": "server",
+          "id": "12319570176697581046",
+          "name": "PROD_ISO_OBP-xcc"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "8082813985163983697",
+      "resource-name": "PROD_ISO_OBP",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "2667309407830195142",
+          "name": "PROD_ISO_OBP_01-R1"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "server",
+          "id": "13120374894640474789",
+          "name": "PROD_ISO_OBP-webdav"
+        },
+        {
+          "type": "server",
+          "id": "12319570176697581046",
+          "name": "PROD_ISO_OBP-xcc"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "12259257134380052022",
+      "resource-name": "Documents",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "16856655610604380807",
+          "name": "Schemas",
+          "roleref": "schema"
+        },
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "database",
+          "id": "5493578562136933716",
+          "name": "Triggers",
+          "roleref": "triggers"
+        },
+        {
+          "type": "forest",
+          "id": "6510674382111862544",
+          "name": "Documents"
+        },
+        {
+          "type": "server",
+          "id": "16193727555339080578",
+          "name": "App-Services"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "2925177089019193423",
+      "resource-name": "Meters",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "16083982630011103108",
+          "name": "Meters"
+        }
+      ]
+    },
+    {
+      "state": "info",
+      "resource-type": "database",
+      "resource-id": "8560934244038746308",
+      "resource-name": "PROD_ISO_PROJECTS",
+      "code": "HEALTH-DATABASE-NO-BACKUP",
+      "message": "Database has never been backed up.",
+      "relation": [
+        {
+          "type": "database",
+          "id": "5696235803027714789",
+          "name": "Security",
+          "roleref": "security"
+        },
+        {
+          "type": "forest",
+          "id": "5963905676705927203",
+          "name": "PROD_ISO_PROJECTS_01"
+        },
+        {
+          "type": "server",
+          "id": "17643765420635381797",
+          "name": "prod_iso_projects-search"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "server",
+      "resource-id": "13120374894640474789",
+      "resource-name": "PROD_ISO_OBP-webdav",
+      "code": "HEALTH-SERVER-DATABASE-MISCONFIGURED",
+      "message": " This WebDAV server references a database with directory creation set to manual, set to automatic.",
+      "relation": [
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        },
+        {
+          "type": "host",
+          "id": "9893745959390689567",
+          "name": "vmlinmlc04.iso.ch"
+        },
+        {
+          "type": "host",
+          "id": "5303762666313818542",
+          "name": "vmlinmlc05.iso.ch"
+        },
+        {
+          "type": "host",
+          "id": "17383207595577169412",
+          "name": "vmlinmlc06.iso.ch"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "host",
+      "resource-id": "5303762666313818542",
+      "resource-name": "vmlinmlc05.iso.ch",
+      "code": "HEALTH-HOST",
+      "message": " Review forest:PROD_ISO_OBP_02",
+      "relation": [
+        {
+          "type": "forest",
+          "id": "1443618288818579741",
+          "name": "Modules_R01"
+        },
+        {
+          "type": "forest",
+          "id": "2667309407830195142",
+          "name": "PROD_ISO_OBP_01-R1"
+        },
+        {
+          "type": "forest",
+          "id": "16748408603390481435",
+          "name": "PROD_ISO_OBP_02"
+        },
+        {
+          "type": "forest",
+          "id": "3438955713165945953",
+          "name": "PROJECTS-INTERIM_01_R01"
+        },
+        {
+          "type": "forest",
+          "id": "10999004094289423816",
+          "name": "Schemas_R01"
+        },
+        {
+          "type": "forest",
+          "id": "920070213049873702",
+          "name": "Security_R01"
+        },
+        {
+          "type": "forest",
+          "id": "13364735901318805859",
+          "name": "Triggers_R01"
+        },
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "host",
+      "resource-id": "17383207595577169412",
+      "resource-name": "vmlinmlc06.iso.ch",
+      "code": "HEALTH-HOST",
+      "message": " Review forest:PROD_ISO_OBP_02-R1",
+      "relation": [
+        {
+          "type": "forest",
+          "id": "12123041389131055429",
+          "name": "Modules_R02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "12782821952456696931",
+          "name": "PROJECTS-INTERIM_01_R02"
+        },
+        {
+          "type": "forest",
+          "id": "14989601566255208967",
+          "name": "Schemas_R02"
+        },
+        {
+          "type": "forest",
+          "id": "9519566835972118258",
+          "name": "Security_R02"
+        },
+        {
+          "type": "forest",
+          "id": "1115641602318973085",
+          "name": "Triggers_R02"
+        },
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "host",
+      "resource-id": "17383207595577169412",
+      "resource-name": "vmlinmlc06.iso.ch",
+      "code": "HEALTH-HOST",
+      "message": " Review forest:PROD_ISO_OBP_03",
+      "relation": [
+        {
+          "type": "forest",
+          "id": "12123041389131055429",
+          "name": "Modules_R02"
+        },
+        {
+          "type": "forest",
+          "id": "15451524771477445067",
+          "name": "PROD_ISO_OBP_02-R1"
+        },
+        {
+          "type": "forest",
+          "id": "4429508507485302477",
+          "name": "PROD_ISO_OBP_03"
+        },
+        {
+          "type": "forest",
+          "id": "12782821952456696931",
+          "name": "PROJECTS-INTERIM_01_R02"
+        },
+        {
+          "type": "forest",
+          "id": "14989601566255208967",
+          "name": "Schemas_R02"
+        },
+        {
+          "type": "forest",
+          "id": "9519566835972118258",
+          "name": "Security_R02"
+        },
+        {
+          "type": "forest",
+          "id": "1115641602318973085",
+          "name": "Triggers_R02"
+        },
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "host",
+      "resource-id": "9893745959390689567",
+      "resource-name": "vmlinmlc04.iso.ch",
+      "code": "HEALTH-HOST",
+      "message": " Review forest:PROD_ISO_OBP_03-R1",
+      "relation": [
+        {
+          "type": "forest",
+          "id": "8397023215818988861",
+          "name": "App-Services"
+        },
+        {
+          "type": "forest",
+          "id": "6510674382111862544",
+          "name": "Documents"
+        },
+        {
+          "type": "forest",
+          "id": "12507526647046787070",
+          "name": "Extensions"
+        },
+        {
+          "type": "forest",
+          "id": "3019903636670824825",
+          "name": "Fab"
+        },
+        {
+          "type": "forest",
+          "id": "4733454844896298256",
+          "name": "Last-Login"
+        },
+        {
+          "type": "forest",
+          "id": "16083982630011103108",
+          "name": "Meters"
+        },
+        {
+          "type": "forest",
+          "id": "9004974684966661628",
+          "name": "Modules"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "forest",
+          "id": "5963905676705927203",
+          "name": "PROD_ISO_PROJECTS_01"
+        },
+        {
+          "type": "forest",
+          "id": "4904300717914655324",
+          "name": "PROJECTS-INTERIM_01"
+        },
+        {
+          "type": "forest",
+          "id": "3403095080802031604",
+          "name": "Schemas"
+        },
+        {
+          "type": "forest",
+          "id": "11010766077713076500",
+          "name": "Security"
+        },
+        {
+          "type": "forest",
+          "id": "10154269852158680411",
+          "name": "Triggers"
+        },
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        }
+      ]
+    },
+    {
+      "state": "at-risk",
+      "resource-type": "host",
+      "resource-id": "9893745959390689567",
+      "resource-name": "vmlinmlc04.iso.ch",
+      "code": "HEALTH-HOST",
+      "message": " Review forest:PROD_ISO_OBP_01",
+      "relation": [
+        {
+          "type": "forest",
+          "id": "8397023215818988861",
+          "name": "App-Services"
+        },
+        {
+          "type": "forest",
+          "id": "6510674382111862544",
+          "name": "Documents"
+        },
+        {
+          "type": "forest",
+          "id": "12507526647046787070",
+          "name": "Extensions"
+        },
+        {
+          "type": "forest",
+          "id": "3019903636670824825",
+          "name": "Fab"
+        },
+        {
+          "type": "forest",
+          "id": "4733454844896298256",
+          "name": "Last-Login"
+        },
+        {
+          "type": "forest",
+          "id": "16083982630011103108",
+          "name": "Meters"
+        },
+        {
+          "type": "forest",
+          "id": "9004974684966661628",
+          "name": "Modules"
+        },
+        {
+          "type": "forest",
+          "id": "12164944854092823856",
+          "name": "PROD_ISO_OBP_01"
+        },
+        {
+          "type": "forest",
+          "id": "16687723532929874353",
+          "name": "PROD_ISO_OBP_03-R1"
+        },
+        {
+          "type": "forest",
+          "id": "5963905676705927203",
+          "name": "PROD_ISO_PROJECTS_01"
+        },
+        {
+          "type": "forest",
+          "id": "4904300717914655324",
+          "name": "PROJECTS-INTERIM_01"
+        },
+        {
+          "type": "forest",
+          "id": "3403095080802031604",
+          "name": "Schemas"
+        },
+        {
+          "type": "forest",
+          "id": "11010766077713076500",
+          "name": "Security"
+        },
+        {
+          "type": "forest",
+          "id": "10154269852158680411",
+          "name": "Triggers"
+        },
+        {
+          "type": "group",
+          "id": "15597201059728716489",
+          "name": "Default"
+        }
+      ]
+    }
+  ]
+}
