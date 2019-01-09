@@ -28,7 +28,7 @@ type ClusterHealthReports struct {
 
 func contains(s []string, e string) bool {
 	for _, a := range s {
-		if a == e {
+		if a == "*" || a == e {
 			return true
 		}
 	}
@@ -49,7 +49,7 @@ func main() {
 	var url string
 	username := ""
 	password := ""
-	resourceTypes := []string{"cluster"}
+	resourceTypes := []string{"*"}
 	ignoreStates := []string{"info"}
 
 	if len(os.Args) < 4 {
