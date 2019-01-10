@@ -19,7 +19,7 @@ The result is written to stdout and can be used to trigger specific monitoring a
   `marklogic_monitor "http://localhost:8002/manage/v2?view=health&format=json" username password database info`
 
 ## Output 
-* When no critical healt-report was found
+* When no critical health-report was found
   
   `OK` 
  
